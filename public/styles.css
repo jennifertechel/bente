@@ -1,0 +1,181 @@
+@font-face {
+    font-family: chewy;
+    src: url(/public/Chewy-Regular.ttf);
+}
+
+@font-face {
+    font-family: open-reg;
+    src: url(/public/OpenSans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: open-semibold;
+    src: url(/public/OpenSans/OpenSans-SemiBold.ttf);
+}
+
+/*--- First page ---*/
+#one {
+
+    background-color: #8C92AC;
+    height: 100vh;
+    display: flex;
+}
+
+#one .row {
+
+    justify-content: center;
+}
+
+#one .col-12 {
+
+}
+
+#one .title {
+
+    font-family: 'chewy';
+    font-size: 110px;
+    color: #FFBC66;
+}
+
+#one .subtitle {
+
+    font-family: 'open-semibold';
+    color: #FFBC66;
+    font-size: 25px;
+    
+}
+
+#one .bi-list {
+
+    font-size: 40px;
+    color: #FFBC66;
+}
+
+#one .bi-chevron-compact-down {
+
+    font-size: 40px;
+    color: #FFBC66;
+}
+/* Hidden menu */
+
+
+.hidden-menu {
+
+    height: 100vh;
+    background-color: #FFBC66;
+    width: 25%;
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+}
+
+#one .bi-x {
+
+    font-size: 40px;
+    color: #8C92AC;
+    place-self: self-end;
+}
+
+.hidden-menu a {
+
+    text-decoration: none;
+    color: #8C92AC;
+    font-family: 'open-semibold';
+    padding-top: 2rem;
+    font-size: 25px;
+}
+
+.hidden-menu .navbar {
+
+    display: flex;
+    
+}
+
+.flex-column .navbar-brand {
+
+    font-family: 'chewy';
+    color: #8C92AC;
+    font-size: 50px;
+ 
+}
+
+.hidden-menu .flex-row {
+
+    display: flex;
+    place-content: center;
+    justify-content: space-evenly;
+    padding-top: 3rem;
+}
+
+.flex-row i {
+
+    font-size: 20px;
+    color: #8C92AC;
+    
+}
+
+
+/*--- End First Page ---*/
+
+/*--- Second Page ---*/
+
+#two {
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+}
+
+/* Navbar */
+
+#two .navbar {
+
+    background-color: #8C92AC;
+    justify-content: space-around;
+    
+}
+
+#two a {
+
+    color: #FFBC66;
+    text-decoration: none;
+    font-family: 'chewy';
+}
+
+#two .container {
+
+    display: flex;
+    flex-direction: column;
+}
+
+#two .h1 {
+
+    font-family: 'chewy';
+    color: #FFBC66;
+}
+
+#two p {
+
+    font-family: 'open-reg';
+    
+}
+
+#two .subh {
+
+    color: #FFBC66;
+    font-family: 'open-semibold';
+}
+/*--- End Second Page ---*/
+
+/*--- Third Page ---*/
+
+#three {
+
+    height: 100vh;
+ 
+}
+
+/*--- End Third Page ---*/
