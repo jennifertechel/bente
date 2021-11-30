@@ -1,62 +1,23 @@
 @font-face {
     font-family: chewy;
-    src: url(/public/Chewy-Regular.ttf);
+    src: url(/public/fonts/Chewy-Regular.ttf);
 }
 
 @font-face {
     font-family: open-reg;
-    src: url(/public/OpenSans/OpenSans-Regular.ttf);
+    src: url(/public/fonts/OpenSans/OpenSans-Regular.ttf);
 }
 
 @font-face {
     font-family: open-semibold;
-    src: url(/public/OpenSans/OpenSans-SemiBold.ttf);
+    src: url(/public/fonts/OpenSans/OpenSans-SemiBold.ttf);
 }
 
-/*--- First page ---*/
-#one {
+.container-fluid {
 
-    background-color: #8C92AC;
-    height: 100vh;
-    display: flex;
+    overflow: hidden;
 }
-
-#one .row {
-
-    justify-content: center;
-}
-
-#one .col-12 {
-
-}
-
-#one .title {
-
-    font-family: 'chewy';
-    font-size: 110px;
-    color: #FFBC66;
-}
-
-#one .subtitle {
-
-    font-family: 'open-semibold';
-    color: #FFBC66;
-    font-size: 25px;
-    
-}
-
-#one .bi-list {
-
-    font-size: 40px;
-    color: #FFBC66;
-}
-
-#one .bi-chevron-compact-down {
-
-    font-size: 40px;
-    color: #FFBC66;
-}
-/* Hidden menu */
+/*--- Hidden Menu ---*/
 
 
 .hidden-menu {
@@ -66,16 +27,18 @@
     width: 25%;
     position: absolute;
     right: 0;
+    top: 0px;
     display: flex;
     flex-direction: column;
     visibility: hidden;
 }
 
-#one .bi-x {
+.hidden-menu .bi-x {
 
-    font-size: 40px;
+    font-size: 3rem;
     color: #8C92AC;
     place-self: self-end;
+    z-index: 1;
 }
 
 .hidden-menu a {
@@ -84,7 +47,7 @@
     color: #8C92AC;
     font-family: 'open-semibold';
     padding-top: 2rem;
-    font-size: 25px;
+    font-size: 1.65rem;
 }
 
 .hidden-menu .navbar {
@@ -97,7 +60,7 @@
 
     font-family: 'chewy';
     color: #8C92AC;
-    font-size: 50px;
+    font-size: 3rem;
  
 }
 
@@ -111,9 +74,143 @@
 
 .flex-row i {
 
-    font-size: 20px;
+    font-size: 2rem;
     color: #8C92AC;
     
+}
+
+/*--- End Hidden Menu ---*/
+
+/* Navbar */
+
+.top-menu {
+
+    padding: 0px;
+    position: sticky;
+    top: 0px;
+    height: 68px;
+    z-index: 10000;
+    
+}
+.top-menu .navbar {
+
+    background-color: #8C92AC;
+    justify-content: space-around;
+    
+}
+
+.top-menu a {
+
+    color: #FFBC66;
+    text-decoration: none;
+    font-family: 'open-semibold';
+    
+}
+
+.top-menu .nav-item {
+
+    font-family: 'open-semibold';
+    
+}
+
+.top-menu .navbar-brand {
+
+    font-size: 1.75rem;
+    margin-right: 10rem;
+    font-family: 'chewy';
+}
+
+
+.navNone {
+
+    opacity: 0; 
+}
+
+.fadeIn {
+
+    animation: fadeIn 1s ease; 
+    opacity: 1;
+}
+
+@keyframes fadeIn {
+    
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+/* End Navbar */ 
+
+/*--- First page ---*/
+
+.col-12 i {
+
+    position: absolute;
+    
+}
+.col-12 i.bi-list {
+
+    top: 0px;
+    right: 10px;
+    
+}
+.col-12 i.bi-chevron-compact-down {
+
+    bottom: 10px;
+    left: 50%;
+}
+
+.row.gray-bg {
+
+    background-color: #8C92AC;
+}
+
+#one .col-inner {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#one .text {
+
+    height: 100vh;
+}
+
+#one .title {
+
+    display: flex;
+    font-family: 'chewy';
+    font-size: 6rem;
+    color: #FFBC66;
+}
+
+#one .subtitle {
+
+    display: flex;
+    font-family: 'open-semibold';
+    color: #FFBC66;
+    font-size: 1.5rem;
+    
+}
+
+#one .bi-list {
+
+    font-size: 3.5rem;
+    color: #FFBC66;
+}
+
+#one .bi-chevron-compact-down {
+
+    font-size: 3.5rem;
+    color: #FFBC66;
+    animation: bounce infinite 1s ease-in-out; 
+  
+}
+
+@keyframes bounce {
+    0% { transform: translateY(-5px)  }
+    50% { transform: translateY(8px) }
+    100% { transform: translateY(-5px) }
 }
 
 
@@ -123,59 +220,327 @@
 
 #two {
 
-    height: 100vh;
+    height: calc(100vh + 70px);
+    padding-top: 70px;
     display: flex;
     flex-direction: column;
     padding: 0%;
 }
 
-/* Navbar */
 
-#two .navbar {
-
-    background-color: #8C92AC;
-    justify-content: space-around;
-    
-}
-
-#two a {
-
-    color: #FFBC66;
-    text-decoration: none;
-    font-family: 'chewy';
-}
-
-#two .container {
+#two > div > div:nth-child(1) > div {
 
     display: flex;
+    height: 100vh;
+    align-items: flex-start;
     flex-direction: column;
-}
-
-#two .h1 {
-
-    font-family: 'chewy';
-    color: #FFBC66;
+    justify-content: center;
+    margin-left: 5rem;
 }
 
 #two p {
 
     font-family: 'open-reg';
-    
 }
 
-#two .subh {
+#two .h1 {
 
     color: #FFBC66;
     font-family: 'open-semibold';
 }
+
+#two .h2 {
+
+    color: #FFBC66;
+    font-size: 1.2rem;
+    margin-bottom: 5%;
+}
+
+#two .for-pic {
+
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: flex-end;
+}
+
+.bounce-2 {
+
+    position: absolute;
+    font-size: 3.5rem;
+    color: #8C92AC;
+    animation: bounce infinite 1s ease-in-out;
+    right: 50%;
+    bottom: -100%;
+
+}
+
+
 /*--- End Second Page ---*/
 
 /*--- Third Page ---*/
 
 #three {
 
-    height: 100vh;
- 
+    height: calc(100vh + 70px);
+    padding-top: 70px;
+
+}
+
+#three .slideshow-container {
+
+    justify-content: center;
+    font-family: 'open-reg';
+    height: 80vh;    
+}
+
+#three .heading {
+
+    text-align: center;
+    padding: 1.5rem;
+    font-family: 'open-reg';
+
+}
+
+#three .heading .p {
+
+    font-family: 'open-semibold';
+}
+
+#three .h3 {
+
+    font-family: 'chewy';
+    color: #8C92AC;
+}
+
+
+#three .slideshow-viewport {
+
+    width: 80%;
+    height: 80%;
+
+}
+
+#three .slideshow-content {
+
+    flex-direction: column;
+    height: 100%;
+    place-content: space-around;
+}
+
+#three .media {
+
+    height: 100%;
+    
+}
+
+.slideshow-content .col {
+
+    background-color: #E5E5E5;
+    margin-bottom: 2rem;
+    padding: 5rem;
+    max-width: 20rem;
+    max-height: 20rem;
+}
+
+
+.hide {
+
+    visibility: hidden;
+}
+
+.slideshow-content .col.hover {
+
+    background-color: #8C92AC;
+    
+}
+#three .slideshow-content .col.hover .h3 {
+
+    color: #E5E5E5;    
+}
+
+#three img {
+
+    position: absolute;
+    
 }
 
 /*--- End Third Page ---*/
+
+/*--- Fourth Page ---*/
+
+#four {
+
+    height: calc(100vh + 70px);
+    padding-top: 70px;
+}
+
+.contact {
+
+    flex-direction: row;
+    height: 70vh;
+}
+
+
+.footer {
+
+    flex-direction: row;
+    background-color: #8C92AC;
+    height: 30vh;
+    padding-top: 20px;
+}
+
+
+
+/*--- End Fourth Page ---*/
+
+
+/*--- Vertical Slideshow ---*/ 
+
+.vert-slide-demo {
+
+    height: calc(100vh + 70px);
+    padding-top: 70px;
+}
+
+.library-heading {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+
+}
+
+.library-heading h3 {
+
+    font-family: 'chewy';
+    font-size: 2rem;
+}
+
+.library-heading p {
+
+    font-family: 'open-reg';
+    font-size: 1.5rem;
+}
+
+.vert-slide-demo i {
+
+    font-size: 2.5rem;
+}
+
+.viewport {
+
+    position: relative;
+    height: 470px;
+    overflow: hidden;
+}
+
+.top-slide { 
+
+    
+    top: -425px;
+}
+
+.current-slide {
+
+    top: 0px;
+    
+}
+
+.bottom-slide {
+
+    top: 425px;
+    
+}
+
+.slide-container {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'open-reg';
+    background-color: #E5E5E5;
+    padding: 20px;
+    width: 640px;
+ 
+}
+
+.slide-container .contains-text {
+
+    width: 300px;
+
+}
+
+.slide-container .contains-img {
+
+    padding-right: 10px;
+    
+}
+
+.controls {
+
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+    justify-content: center;
+    right: 370px;
+    background-color: #E5E5E5;
+
+}
+
+.slides {
+
+    visibility: hidden;
+}
+
+.slides-container {
+
+    position: absolute;
+    top:-425px;
+    animation-duration: 1s;
+    left: 30%;
+
+}
+.slide-container {
+
+    position: relative;
+    top:0px !important;
+}
+
+.animating1 .slides-container {
+
+    animation-name: rollDown;
+    
+}
+.animating-1 .slides-container {
+
+    animation-name: rollUp;
+    
+}
+
+@keyframes rollDown {
+    
+    from {
+        top: -850px;
+    }
+  
+    to {
+        top: -425px;
+    }
+}
+@keyframes rollUp {
+
+    
+    from {
+        top: 0px;
+    }
+  
+    to {
+        top: -425px;
+    }
+}
+
+/*--- End Vertical Slideshow ---*/ 
