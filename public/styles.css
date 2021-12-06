@@ -33,6 +33,7 @@
     visibility: hidden;
 }
 
+
 .hidden-menu .bi-x {
 
     font-size: 3rem;
@@ -220,18 +221,18 @@
 
 #two {
 
-    height: calc(100vh + 70px);
-    padding-top: 70px;
+    height: 100vh;
+    padding-top: 68px;
     display: flex;
     flex-direction: column;
-    padding: 0%;
+    padding-right: 0px;
 }
 
 
 #two > div > div:nth-child(1) > div {
 
     display: flex;
-    height: 100vh;
+    height: calc(100vh - 68px);
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
@@ -256,14 +257,147 @@
     margin-bottom: 5%;
 }
 
-#two .for-pic {
+#two .container-figures {
 
     display: flex;
     align-items: flex-end;
     flex-direction: column;
-    height: 100vh;
-    justify-content: flex-end;
+    height: calc(100vh - 68px);
+    position: relative;
+    overflow: hidden;
+    
 }
+
+.figures {
+
+    position: absolute;
+}
+
+.circle {
+ 
+    bottom: 0px;
+    right: -100px;
+    animation-name: circleMove;
+    animation-duration: 10s ;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes circleMove {
+
+    0% {
+        bottom: 0px;
+        right: -100px;
+    }
+  
+
+    25% {
+
+        bottom: 0px;
+        right: 200px;
+
+    }
+    50% {
+        bottom: 200px;
+        right: 200px;
+    }
+
+    75% {
+
+        bottom: 200px;
+        right: -100px;
+
+    }
+  
+    to {
+        bottom: 0px;
+        right: -100px;
+    }
+  
+  }
+
+
+.triangle {
+
+    bottom: 200px;
+    right: 20px;
+    animation-name: triMove;
+    animation-duration: 10s ;
+    animation-iteration-count: infinite;
+}
+
+@keyframes triMove {
+
+    from {
+        bottom: 100px;
+        right: 50px;
+    }
+  
+    25% {
+
+        bottom: 300px;
+        right: 100px;
+    }
+    50% {
+        bottom: 500px;
+        right: 200px;
+    }
+  
+    75% {
+
+        bottom: 300px;
+        right: 100px;
+    }
+    to {
+        bottom: 100px;
+        right: 20px;
+    }
+  
+  }
+
+
+.rectangle {
+
+    bottom: 80px;
+    right: 200px;
+    animation-name: recMove;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+
+
+@keyframes recMove {
+
+    0% {
+        bottom: 80px;
+        right: 200px;
+    }
+
+    25% {
+
+        bottom: 250px;
+        right: 200px;
+    }
+  
+    50% {
+        bottom: 250px;
+        right: 0px;
+    }
+
+    75% {
+
+        bottom: 80px;
+        right: 0px;
+    }
+  
+    100% {
+        bottom: 80px;
+        right: 200px;
+    }
+  
+  }
+
 
 .bounce-2 {
 
@@ -271,8 +405,8 @@
     font-size: 3.5rem;
     color: #8C92AC;
     animation: bounce infinite 1s ease-in-out;
-    right: 50%;
-    bottom: -100%;
+    left: 50%;
+    bottom: -105%;
 
 }
 
@@ -283,8 +417,8 @@
 
 #three {
 
-    height: calc(100vh + 70px);
-    padding-top: 70px;
+    height: 100vh;
+    padding-top: 68px;
 
 }
 
@@ -299,13 +433,15 @@
 
     text-align: center;
     padding: 1.5rem;
-    font-family: 'open-reg';
+    font-family: 'chewy';
+    
 
 }
 
-#three .heading .p {
+#three .heading p {
 
     font-family: 'open-semibold';
+    font-size: 1.25rem;
 }
 
 #three .h3 {
@@ -332,7 +468,15 @@
 #three .media {
 
     height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
     
+}
+
+.media img {
+
+    position: absolute;
 }
 
 .slideshow-content .col {
@@ -343,7 +487,6 @@
     max-width: 20rem;
     max-height: 20rem;
 }
-
 
 .hide {
 
@@ -360,48 +503,16 @@
     color: #E5E5E5;    
 }
 
-#three img {
 
-    position: absolute;
-    
-}
 
 /*--- End Third Page ---*/
-
-/*--- Fourth Page ---*/
-
-#four {
-
-    height: calc(100vh + 70px);
-    padding-top: 70px;
-}
-
-.contact {
-
-    flex-direction: row;
-    height: 70vh;
-}
-
-
-.footer {
-
-    flex-direction: row;
-    background-color: #8C92AC;
-    height: 30vh;
-    padding-top: 20px;
-}
-
-
-
-/*--- End Fourth Page ---*/
-
 
 /*--- Vertical Slideshow ---*/ 
 
 .vert-slide-demo {
 
-    height: calc(100vh + 70px);
-    padding-top: 70px;
+    height: 100vh;
+    padding-top: 68px;
 }
 
 .library-heading {
@@ -429,6 +540,12 @@
 .vert-slide-demo i {
 
     font-size: 2.5rem;
+}
+
+.container-viewport {
+
+    background-color: #E5E5E5;
+    width: 40%;
 }
 
 .viewport {
@@ -462,7 +579,6 @@
     flex-direction: row;
     align-items: center;
     font-family: 'open-reg';
-    background-color: #E5E5E5;
     padding: 20px;
     width: 640px;
  
@@ -486,14 +602,12 @@
     flex-direction: column;
     max-width: fit-content;
     justify-content: center;
-    right: 370px;
-    background-color: #E5E5E5;
 
 }
 
 .slides {
 
-    visibility: hidden;
+    display: none;
 }
 
 .slides-container {
@@ -501,7 +615,7 @@
     position: absolute;
     top:-425px;
     animation-duration: 1s;
-    left: 30%;
+ 
 
 }
 .slide-container {
@@ -544,3 +658,55 @@
 }
 
 /*--- End Vertical Slideshow ---*/ 
+
+
+/*--- Fourth Page ---*/
+
+#four {
+
+    height: 100vh;
+    padding-top: 68px;
+}
+
+.contact {
+
+    flex-direction: row;
+    height: 75vh;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.footer {
+
+    flex-direction: row;
+    background-color: #8C92AC;
+    height: 25vh;
+    padding-top: 10px;
+}
+
+.footer .brand {
+
+    font-family: 'chewy';
+    color:#FFBC66;
+}
+
+.footer p {
+
+    font-size: 0.75rem;
+}
+
+.footer i {
+
+    font-size: 1.5rem;
+    padding-right: 10px;
+}
+
+form {
+
+    font-family: 'open-reg';
+}
+
+/*--- End Fourth Page ---*/
+
+

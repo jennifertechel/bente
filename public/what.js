@@ -10,23 +10,28 @@ function hideMenu() {
     document.querySelector(".hidden-menu").style.visibility = "hidden";
 }
 
+/* End Buttons for Hidden Menu */
 
-document.querySelector(".bi-chevron-compact-down").addEventListener("click", nextPage);
-function nextPage() {
+/* Scroll into View */
+
+document.querySelector(".bounce").addEventListener("click", firstPage);
+function firstPage() {
     document.querySelector("#two").scrollIntoView();    
 }
 
+document.querySelector(".bounce-2").addEventListener("click", secondPage);
+function secondPage() {
+    document.querySelector("#three").scrollIntoView();    
+}
 
-console.log(window.innerHeight);
-
-/* End Buttons for Hidden Menu */
+/* End Scroll into View */
 
 
 /* Display and fade Navbar */
 
 const windowHeight = window.innerHeight;
 const trigger = (windowHeight-80)*-1 + "px"; 
-            
+            console.log(window.innerHeight);
 console.log(trigger); 
 
 var observerOptions = {
@@ -80,7 +85,6 @@ document.querySelectorAll(".slideshow-content .col").forEach(box => {
 /* End Hover-function for Guide */
 
 /* Library Vertical Slideshow */
-
 
 document.querySelectorAll(".vert-slide").forEach(slider => {
   var slides = slider.querySelectorAll(".slides .slide");

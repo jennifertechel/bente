@@ -75,6 +75,7 @@
         <!-- Second Page -->
         <div class="container-fluid" id="two">
 
+            <i class="bi bi-chevron-compact-down bounce-2" type="button"></i>
             <div class="row">
                 <div class="col-lg-6">
 
@@ -85,26 +86,32 @@
                     
                 
                         <p class="h3">Explore Library</p>
-                        <p class="p">Listen to thousands of audiobooks – everything from bestsellers to acclaimed thrillers, breathtaking novels or weighty biographies. Discover our library today!</p>
+                        <p class="p">Listen to thousands of audiobooks – everything from bestsellers to acclaimed thrillers, breathtaking novels or weighty biographies. Discover our <a href="#library">library</a> today!</p>
                         <p class="h3">Stream or Listen Offline</p>
                         <p class="p">You can stream or download all of our books. Listen and read whenever and wherever you'd like.</p>
                         <p class="h3">Unlimited Access</p>
                         <p class="p">Enjoy unlimited access to a world of audiobooks & ebooks in languages of your choice</p>
-                        <i class="bi bi-chevron-compact-down bounce-2"></i>
                         
                     </div>
 
-                    
-                        
                 </div>
 
                 <div class="col-lg-6">
 
-                    <div class="for-pic">
-                        <img src="/public/Media/Figures.png" alt="">
-                    </div>
-        
+                    <div class="container-figures">
+                        <div class="figures circle">
+                            <img src="/public/Media/Circle.png" alt="">
+                        </div>
+                        <div class="figures rectangle">
+                            <img src="/public/Media/Rectangle.png" alt="">
+                        </div>
+                        <div class="figures triangle">
+                            <img src="/public/Media/Triangle.png" alt="">
+                        </div>
+                    </div>  
+
                 </div>
+                
                 
 
             </div>
@@ -119,8 +126,8 @@
             <div class="row slideshow-container">
                 
                 <div class="heading">
-                    <div class="h2">How does it work?</div>
-                    <div class="p">A step by step guide</div>
+                    <h2>How does it work?</h2>
+                    <p>A step by step guide</p>
                 </div>
 
                 <div class="row slideshow-viewport">
@@ -144,11 +151,14 @@
                     </div>
 
                     <div class="col-4 media">
+
                         <img src="/public/Media/phone-1.png">
                         <img src="/public/Media/phone-2.png" class="hide">
                         <img src="/public/Media/phone-3.png" class="hide">
                         <img src="/public/Media/phone-4.png" class="hide">
+
                     </div>
+
                     <div class="col-4">
 
                         <div class="row slideshow-content">
@@ -178,31 +188,33 @@
         <!-- Vertical Slideshow -->
 
         <div class="container-fluid vert-slide vert-slide-demo" id="library">
-            <div class="row"> 
+            <div class="row justify-content-center"> 
 
                 <div class="library-heading">
                     <h3>Browse our Library!</h3>
-                    <p>A small taste of our library that contains over 3,000 audio<br> and e-books on multiple languages.</p>
+                    <p>A small taste of our library that contains over 3,000 audio<br> and e-books in multiple languages.</p>
                 </div>
-              
-                <div class="col-8 viewport">
-                    <div class="slides-container">
-                        <div class="slide-container top-slide"></div>
-                        <div class="slide-container current-slide"></div>
-                        <div class="slide-container bottom-slide"></div>
+                <div class="row container-viewport">
+                    <div class="col viewport">
+                        <div class="slides-container">
+                            <div class="slide-container top-slide"></div>
+                            <div class="slide-container current-slide"></div>
+                            <div class="slide-container bottom-slide"></div>
+                        </div>
+                        <!--
+                            current slide should ALWAYS be centered after animation
+                            current slide should NEVER be centered in the first animation frame
+                        -->
+                        
                     </div>
-                    <!--
-                        current slide should ALWAYS be centered after animation
-                        current slide should NEVER be centered in the first animation frame
-                    -->
                     
-                </div>
-                
-                <div class="col-4 controls">
-                    <i class="bi bi-chevron-up" direction="-1" type="button"></i>
-                    <i class="bi bi-chevron-down" direction="1" type="button"></i>
+                    <div class="col controls">
+                        <i class="bi bi-chevron-up" direction="-1" type="button"></i>
+                        <i class="bi bi-chevron-down" direction="1" type="button"></i>
+                    </div>
                 </div>
             </div>
+
         
             <div class="slides">
                 <div class="slide">
@@ -251,45 +263,80 @@
         <div class="container-fluid four" id="four">
 
             <div class="row contact">
-                <div class="col-6">
+                <div class="col-4">
                     <div class="test-container">
-                        <h1>BLADBLAD BLAD LD</h1>
+                        <h1></h1>
                     </div>
 
                 </div>
-                <div class="col-6">
-                    <div class="test-container">
-                        <h1>BLADBLAD BLAD LD</h1>
-                    </div>
+                <div class="col-4">
+                    <form class="row g-3">
+                        <input type="text" placeholder="SEARCH BOOKS BIIIATCH!">
+                        <ul>
+                            <li>BOOK RESULT</li>
+                
+                        </ul>
+                        <!--
+                        <div class="col-6">
+                            <label for="first-name" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="first-name">
+                        </div>
+                        <div class="col-6">
+                            <label for="last-name" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="last-name">
+            
+                        </div>
+                        <div class="col-12">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="col-12">
+                            <label for="select" class="form-label">Subject</label>
+                            <select class="form-select" aria-label="Subject" id="select">
+                                <option selected>Choose Subject</option>
+                                <option value="1">Payment</option>
+                                <option value="2">Customer service</option>
+                                <option value="3">Other</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea class="form-control" id="message" rows="5"></textarea>
+                        </div>
+                        <div class="col">
+                            <button type="submit" class="btn btn-secondary">Send Message!</button>
+                        </div>
+                        -->
+                    </form>
                 </div>
             </div>
 
             <div class="row footer">
                 
-                <div class="col">
-                    <h5>Who are we?</h5>
-                    <p>Länk eller</p>
-                    <p>En till kanske</p>
-                </div>
+                <div class="col"></div>
 
                 <div class="col">
-                    <h5>Who are we?</h5>
-                    <p>Länk eller</p>
-                    <p>En till kanske</p>
+                    <h2 class="brand">Bente Books</h2>
+                    <i class="bi bi-facebook"></i><i class="bi bi-instagram"></i><i class="bi bi-linkedin"></i>
+                    <p>© Bente Books 2021. Trademarks and brands are the property of their respective owners.</p>
                 </div>
                 
                 <div class="col">
-                    <h5>Who are we?</h5>
-                    <p>Länk eller</p>
-                    <p>En till kanske</p>
+                    <h5>FAQs</h5>
+                
                 </div>
             
                 <div class="col">
-                    <h5>Who are we?</h5>
-                    <p>Länk eller</p>
-                    <p>En till kanske</p>
+                    <h5>Privacy</h5>
+                  
                 </div>
 
+                <div class="col">
+                    <h5>Terms</h5>
+                  
+                </div>
+
+                <div class="col"></div>
             </div> 
 
             
