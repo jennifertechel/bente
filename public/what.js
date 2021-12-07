@@ -67,10 +67,10 @@ console.log(observer);
 document.querySelectorAll(".slideshow-content .col").forEach(box => {
   var target = box.getAttribute("target");
   box.addEventListener("mouseover", function (event) {
-    var selector = ".slideshow-viewport .media img:nth-child("+target+")";
+    var selector = ".slideshow-viewport .media .images img:nth-child("+target+")";
     var img = document.querySelector(selector)
     
-    document.querySelectorAll(".slideshow-viewport .media img").forEach(image => {
+    document.querySelectorAll(".slideshow-viewport .media .images img").forEach(image => {
       image.classList.add("hide");
     });
     img.classList.remove("hide");
