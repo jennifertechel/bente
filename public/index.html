@@ -2,10 +2,12 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bente Books</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link href="/public/styles.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+        <script src="https://kit.fontawesome.com/9716442c1c.js" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
        
     </head>
@@ -15,34 +17,33 @@
         <!-- Hidden Menu -->
         <div class="container-fluid hidden-menu">
             <div class="row justify-content-end">
-                <div class="columns col-12 col-md-3">
+                <div class="columns col-12 col-lg-3">
 
                     <i class="bi bi-x" type="button"></i>
 
                     <nav class="navbar flex-column">
                         <a class="navbar-brand" href="#one">Bente</a>
                         <a class="nav-item" href="#two">Who are we?</a>
-                        <a class="nav-item" href="#three">How it works</a>
                         <div class="nav-item dropdown">
-
-                            <a class="dropdown-toggle" role="button" id="dropdown1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Library</a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdown1">
-                                <li><a class="dropdown-item" href="#library">Browse Library</a></li>
-                                <li><a class="dropdown-item" href="#four">Search catalouge</a></li>
-                            </ul>
-                            
+                            <a class="dropdown-toggle" role="button" id="dropdown1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                How it works
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown1">
+                                <a class="dropdown-item" href="#three">Starter Guide</a>
+                                <a class="dropdown-item" href="#library">Browse library</a>
+                            </div>
                         </div>
+                        <a class="nav-item" href="#four">Contact</a>
                     </nav>
                     
-                    <div class="container flex-row">
-                        <i class="bi bi-facebook"></i>
-                        <i class="bi bi-instagram"></i>
-                        <i class="bi bi-linkedin"></i>
-                        
+                    <div class="flex-row social-media">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
+            
                 </div>
             </div>
-            
             
         </div>
         <!-- End Hidden Menu -->
@@ -67,7 +68,7 @@
         <!-- End First Page -->
 
         <!-- Navbar -->
-        <div class="container-fluid top-menu navNone">
+        <div class="container-fluid top-menu navNone d-none d-lg-block">
             <div class="row">
                 <div class="col-12">
                     
@@ -75,18 +76,18 @@
                 
                         <a class="navbar-brand" href="#one">Bente</a>
                         <a class="nav-item" href="#two">Who are we?</a>
-                        <a class="nav-item" href="#three">How it works</a>
                         <div class="nav-item dropdown">
 
                             <a class="dropdown-toggle" role="button" id="dropdown1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Library
+                                How it works
                             </a>
                             <div class="dropdown-menu" aria-labelledby="dropdown1">
-                                <a class="dropdown-item" href="#library">Browse Library</a>
-                                <a class="dropdown-item" href="#four">Search catalouge</a>
+                                <a class="dropdown-item" href="#three">Starter Guide</a>
+                                <a class="dropdown-item" href="#library">Browse library</a>
                             </div>
                             
                         </div>
+                        <a class="nav-item" href="#four">Contact</a>
                        
                     </nav>
 
@@ -98,7 +99,7 @@
         <!-- Second Page -->
         <div class="container-fluid" id="two">
 
-            <i class="bi bi-chevron-compact-down bounce-2" type="button"></i>
+            <i class="bi bi-chevron-compact-down bounce-2" type="button" style="display: none;"></i>
             <div class="row">
                 <div class="col-lg-6">
 
@@ -118,7 +119,7 @@
 
                 </div>
 
-                <div class="col-lg-6">
+                <div class="col-lg-6 d-none d-lg-block">
 
                     <div class="container-figures">
                         <div class="figures circle">
@@ -145,6 +146,25 @@
         <!-- Third Page -->
         <div class="container-fluid" id="three">
             
+            <!-- Mobile Unit Slideshow -->
+          
+
+            <div class="container mobile-slideshow d-none">
+                <h1>How does it work?</h1>
+                <div class="row mobile-viewport justify-content-center">
+                    <div class="col mobile-content">
+                        <h2>#1 Download our App</h2>
+                    </div>
+                    <div class="col mobile-content">
+                        <img src="/public/Media/First.png">
+                    </div>
+                </div>
+                <i class="bi bi-chevron-left"></i>
+                <i class="bi bi-chevron-right"></i>
+            </div>
+
+
+
             <div class="row slideshow-container">
                 
                 <div class="heading">
@@ -287,7 +307,22 @@
         <div class="container-fluid four" id="four">
 
             <div class="row contact">
-                <div class="space"></div>
+                <div class="space">
+                    <img class="small-circle" src="/public/Media/Circle-small.png">
+                    <img class="small-rectangle"src="/public/Media/Rectangle-small.png">
+                    <img class="small-triangle"src="/public/Media/Triangle-small.png">
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        <h5>Customer support</h5>
+                        <p>Contact us at <a href="#">support@bente.com</a> or see if we've already answered it on <a href="#">FAQs</a></p>
+                        <h5>Further questions?</h5>
+                        <p>We'll be happy to answer at <a href="#">info@bente.com</a></p>
+                        <h5>Address</h5>
+                        <p>Bente Books Co</p>
+                        <p>Nybrogade 22</p>
+                        <p>1203 Copenhagen, Denmark</p>
+                    </div>
+                </div>
 
                 <div class="container-fluid news">
                     <div class="row">
@@ -325,22 +360,23 @@
 
                 <div class="col">
                     <h2 class="brand">Bente Books</h2>
-                    <i class="bi bi-facebook"></i><i class="bi bi-instagram"></i><i class="bi bi-linkedin"></i>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     <p>© Bente Books 2021. Trademarks and brands are the property of their respective owners.</p>
                 </div>
                 
                 <div class="col">
-                    <h5>FAQs</h5>
-                
+                    <a href="#">FAQs</a>
                 </div>
             
                 <div class="col">
-                    <h5>Privacy</h5>
+                    <a href="#">Privacy</a>
                   
                 </div>
 
                 <div class="col">
-                    <h5>Terms</h5>
+                    <a href="#">Terms</a>
                   
                 </div>
 

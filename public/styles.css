@@ -32,24 +32,37 @@
 
 .hidden-menu .columns {
 
-    background-color: #FFBC66;
+    background-color: #F5C375;
     height: 100vh;
 }
 
 .hidden-menu .bi-x {
 
     font-size: 3rem;
-    color: #8C92AC;
+    color: #A0A5BA;
     z-index: 1;
+}
+
+.hidden-menu .nav-item {
+
+    text-decoration: none;
+    color: #48484C;
+    font-family: 'open-reg';
+    padding-top: 2rem;
+    font-size: 1.25rem;
 }
 
 .hidden-menu a {
 
     text-decoration: none;
-    color: #8C92AC;
-    font-family: 'open-semibold';
-    padding-top: 2rem;
-    font-size: 1.65rem;
+    color: #48484C;
+    font-family: 'open-reg';
+}
+
+.hidden-menu a:hover {
+
+    color: #A0A5BA;
+
 }
 
 .hidden-menu .navbar {
@@ -61,7 +74,7 @@
 .flex-column .navbar-brand {
 
     font-family: 'chewy';
-    color: #8C92AC;
+    color: #A0A5BA;
     font-size: 3rem;
  
 }
@@ -70,20 +83,29 @@
 
     display: flex;
     place-content: center;
-    justify-content: space-evenly;
     padding-top: 3rem;
 }
 
 .flex-row i {
 
-    font-size: 2rem;
-    color: #8C92AC;
+    font-size: 1.75rem;
+    color: #A0A5BA;
     
+}
+
+.social-media i {
+
+    padding: 1rem;
 }
 
 .hidden-menu .dropdown-item {
 
     font-family: 'open-reg';
+}
+
+.hidden-menu .container {
+
+    margin-top: 40px;
 
 }
 
@@ -116,23 +138,27 @@
 
 .top-menu .navbar {
 
-    background-color: #8C92AC;
+    background-color: #A0A5BA;
     justify-content: space-evenly;
     
 }
 
 .top-menu a {
 
-    color: #FFBC66;
+    color: #48484C;
     text-decoration: none;
-    font-family: 'open-semibold';
-    text-shadow: 0 0 black;
+    font-family: 'open-reg';
 
+}
+
+.top-menu a:hover {
+
+    color: #F5C375;
 }
 
 .top-menu .dropdown-item {
 
-    color: #8C92AC;
+    color: #48484C;
     text-decoration: none;
     font-family: 'open-reg';
     
@@ -141,9 +167,10 @@
 
 .top-menu .navbar-brand {
 
-    font-size: 1.75rem;
+    font-size: 2rem;
     font-family: 'chewy';
     text-shadow: 0 0 black;
+    color: #F5C375;
 }
 
 
@@ -213,14 +240,14 @@
     display: flex;
     font-family: 'chewy';
     font-size: 6rem;
-    color: #EDCF8E;
+    color: #F5C375;
 }
 
 #one .subtitle {
 
     display: flex;
     font-family: 'open-semibold';
-    color: #EFCA80;
+    color: #F5C375;
     font-size: 1.5rem;
     
 }
@@ -228,13 +255,13 @@
 #one .bi-list {
 
     font-size: 3.5rem;
-    color: #EFCA80;
+    color: #F5C375;
 }
 
 #one .bi-chevron-compact-down {
 
     font-size: 3.5rem;
-    color: #EFCA80;
+    color: #F5C375;
     animation: bounce infinite 1s ease-in-out; 
   
 }
@@ -258,7 +285,7 @@
     flex-direction: column;
     padding-right: 0px;
     font-family: 'open-reg';
-    background-color: #FEFCF8;
+    background-color: #F9F9F9;
 }
 
 
@@ -269,20 +296,20 @@
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
-    margin-left: 5rem;
+    margin-left: 18rem;
 }
 
 
 #two h1 {
 
-    color: #EDCF8E;
+    color: #F5C375;
     font-family: 'open-semibold';
     font-size: 3rem;
 }
 
 #two h2 {
 
-    color: #FFBC66;
+    color: #F5C375;
     font-size: 1.2rem;
     margin-bottom: 5%;
 }
@@ -311,7 +338,7 @@ h3 {
 .link {
 
     text-decoration: underline;
-    color: #8C92AC;
+    color: #A0A5BA;
 }
 
 .figures {
@@ -321,8 +348,8 @@ h3 {
 
 .circle {
  
-    bottom: -50px;
-    right: -100px;
+    bottom: 150px;
+    right: -200px;
     animation-name: floatCircle;
     animation-duration: 10s ;
     animation-iteration-count: infinite;
@@ -332,17 +359,17 @@ h3 {
 
 @keyframes floatCircle {
 
-    0% { transform: translateX(0px) translateY(0px)  }
-    50% { transform:translateX(-200px) translateY(100px)}
-    100% { transform: translateX(0px) translateY(0px) }
+    0% { transform: translateX(0%) translateY(0%)  }
+    50% {transform: translateX(-80%) translateY(-30%)}
+    100% { transform: translateX(0%) translateY(0%) }
     
 }
 
 
 .triangle {
 
-    bottom: 190px;
-    right: 10px;
+    bottom: 380px;
+    right: -60px;
     animation-name: floatTriangle;
     animation-duration: 10s ;
     animation-iteration-count: infinite;
@@ -352,16 +379,16 @@ h3 {
 
 @keyframes floatTriangle {
 
-    0% {transform: translateX(0px) translateY(0px)}
-    50% {transform: translateX(20px) translateY(200px)}
-    100% {transform: translateX(0px) translateY(0px)}
+    0% {transform: translateX(0%) translateY(0%)}
+    50% {transform: translateX(-50%) translateY(20%) rotate(-40deg)}
+    100% {transform: translateX(0%) translateY(0%)}
     
 }
 
 .rectangle {
 
-    bottom: 120px;
-    right: 200px;
+    bottom: 80px;
+    right: -30px;
     animation-name: floatRectangle;
     animation-duration: 10s ;
     animation-iteration-count: infinite;
@@ -372,9 +399,9 @@ h3 {
 
 @keyframes floatRectangle {
 
-   0% {transform: translateX(0px) translateY(0px)}
-   50% {transform: translateX(250px) translateY(200px)}
-   100% {transform: translateX(0px) translateY(0px)}
+   0% {transform: translateX(0%) translateY(0%)}
+   50% {transform: translateX(-80%) translateY(-20%) rotate(40deg)}
+   100% {transform: translateX(0%) translateY(0%)}
 
 }
 
@@ -383,17 +410,47 @@ h3 {
 
     position: absolute;
     font-size: 3.5rem;
-    color: #8C92AC;
+    color: #A0A5BA;
     animation: bounce infinite 1s ease-in-out;
     left: 50%;
     bottom: -105%;
 
 }
 
-
 /*--- End Second Page ---*/
 
 /*--- Third Page ---*/
+
+.mobile-slideshow {
+
+    height: 80vh;
+    position: relative;
+}
+.mobile-slideshow .bi {
+
+    font-size: 2rem;
+    position: absolute;
+}
+
+.mobile-slideshow .bi-chevron-right {
+
+    left: 27%;
+    top: 45%;
+}
+
+.mobile-slideshow .bi-chevron-left {
+
+    top: 45%;
+    left: -7%;
+
+}
+
+
+.mobile-viewport {
+
+    flex-direction: column;
+}
+
 
 #three {
 
@@ -414,7 +471,7 @@ h3 {
     text-align: center;
     padding: 1.5rem;
     font-family: 'chewy';
-    color: #656771;
+    color: #484848;
 }
 
 #three .heading p {
@@ -427,13 +484,13 @@ h3 {
 #three .h3 {
 
     font-family: 'chewy';
-    color: #8C92AC;
+    color: #A0A5BA;
 }
 
 
 #three .slideshow-viewport {
 
-    width: 80%;
+    width: 70%;
     height: 80%;
 
 }
@@ -492,7 +549,7 @@ h3 {
 
 .slideshow-content .col.hover {
 
-    background-color: #8C92AC;
+    background-color: #A0A5BA;
     
 }
 
@@ -504,6 +561,16 @@ h3 {
 #three .slideshow-content .col.hover .h3 {
 
     color: #FEF7ED;    
+}
+
+.crossfade {
+
+    animation-name: crossfade;
+}
+
+@keyframes crossfade {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 
@@ -525,6 +592,7 @@ h3 {
     align-items: center;
     padding: 2rem;
     text-align: center;
+    color: #484848;
 
 }
 
@@ -590,6 +658,7 @@ h3 {
 .slide-container .contains-text {
 
     width: 300px;
+ 
 
 }
 
@@ -605,9 +674,29 @@ h3 {
     flex-direction: column;
     max-width: fit-content;
     justify-content: center;
+    color: #48484C;
 
 }
 
+.controls .bi-chevron-up {
+
+    opacity: 0.5;
+}
+
+.controls .bi-chevron-up:hover {
+
+    opacity: 1;
+}
+
+.controls .bi-chevron-down {
+
+    opacity: 0.5;
+}
+
+.controls .bi-chevron-down:hover {
+
+    opacity: 1;
+}
 .slides {
 
     display: none;
@@ -679,6 +768,94 @@ h3 {
 .contact .space {
 
     height: 40vh;
+    position: relative;    
+}
+
+.space img {
+
+    position: absolute;
+
+}
+
+.space .small-circle {
+
+    bottom: 0px;
+    left: 100px;
+    animation-name: rollingCircle;
+    animation-duration: 10s ;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+
+}
+
+@keyframes rollingCircle {
+
+    0% {transform: translateX(0%)}
+    50% {transform: translateX(450%)}
+    100% {transform: translateX(0%)}
+}
+
+.space .small-rectangle {
+
+    bottom: 0px;
+    left: 40px;
+    animation-name: rollingRectangle;
+    animation-duration: 10s ;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+
+}
+
+@keyframes rollingRectangle {               /* ADD ROTATE*/
+
+    0% {transform: translateX(0%) rotate(0deg)}
+    50% {transform: translateX(400%)rotate(180deg)}
+    100% {transform: translateX(0%)rotate(0deg)}
+}
+
+.space .small-triangle {                    
+
+    bottom: 0px;
+    left: 20px;
+    animation-name: rollingTriangle;
+    animation-duration: 10s ;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+
+}
+
+@keyframes rollingTriangle {                /* ADD ROTATE*/
+
+    0% {transform: translateX(0%) rotate(0deg)}
+    50% {transform: translateX(300%) rotate(180deg)}
+    100% {transform: translateX(0%) rotate(0deg)}
+
+}
+
+
+.contact-info {
+
+    font-family: 'open-reg';
+    color: #48484C;
+    position: absolute;
+    background-color: #E5E5E5;
+    width: fit-content;
+    right: 26rem;
+    top: 2rem;
+    padding: 2rem;
+}
+
+.contact-info p {
+
+    font-size: 0.85rem;
+}
+
+.contact-info a {
+
+    color: #F5C375;
 }
 
 .contact .news {
@@ -698,7 +875,7 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: white;
+    color: #F9F9F9;
     text-align: center;
     
 }
@@ -710,12 +887,26 @@ h3 {
     justify-content: center;
 }
 
+.newsletter-form .btn {
+
+    background-color: #A0A5BA;
+    border-style: solid;
+    border-color: #F9F9F9;
+    margin-top: 10px;
+}
+
+.newsletter-form .btn:hover {
+
+    background-color: #F5C375;
+    font-weight: bolder;
+
+}
 
 .form-control {
 
-    background-color: #8C92AC;
-    color: white;
-    border-bottom: 1px solid white;
+    background-color: #A0A5BA;
+    color: #F9F9F9;
+    border-bottom: 1px solid #F9F9F9;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -728,13 +919,27 @@ h3 {
 
     flex-direction: row;
     height: 30vh;
-    padding-top: 10px;
+    padding-top: 3.5rem;
+    color: #48484C;
 }
 
 .footer .brand {
 
     font-family: 'chewy';
-    color:#EFCA80;
+    color:#F5C375;
+}
+
+.footer a {
+
+    color: #48484C;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+.footer a:hover {
+
+    color: #F5C375;
+
 }
 
 .footer p {
@@ -748,5 +953,68 @@ h3 {
     padding-right: 10px;
 }
 
+/*--- End Fourth Page ---
 
-/*--- End Fourth Page ---*/
+
+
+
+.circle {
+ 
+    bottom: -50px;
+    right: -100px;
+    animation-name: floatCircle;
+    animation-duration: 10s ;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+@keyframes floatCircle {
+
+    0% { transform: translateX(0px) translateY(0px)  }
+    50% { transform:translateX(-200px) translateY(100px)}
+    100% { transform: translateX(0px) translateY(0px) }
+    
+}
+
+color: #fdeed8;
+   border-color: #F5DFB3;
+
+.triangle {
+
+    bottom: 190px;
+    right: 10px;
+    animation-name: floatTriangle;
+    animation-duration: 10s ;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+@keyframes floatTriangle {
+
+    0% {transform: translateX(0px) translateY(0px)}
+    50% {transform: translateX(20px) translateY(200px)}
+    100% {transform: translateX(0px) translateY(0px)}
+    
+}
+
+.rectangle {
+
+    bottom: 120px;
+    right: 200px;
+    animation-name: floatRectangle;
+    animation-duration: 10s ;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+
+@keyframes floatRectangle {
+
+   0% {transform: translateX(0px) translateY(0px)}
+   50% {transform: translateX(250px) translateY(200px)}
+   100% {transform: translateX(0px) translateY(0px)}
+
+}
